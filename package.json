@@ -1,0 +1,23 @@
+{
+  "name": "kokis_teppanyaki",
+  "version": "1.0.0",
+  "description": "Kokis restaurant web page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vsan626/Kokis_Teppanyaki.git"
+  },
+  "author": "Danny San",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vsan626/Kokis_Teppanyaki/issues"
+  },
+  "homepage": "https://github.com/vsan626/Kokis_Teppanyaki#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}
