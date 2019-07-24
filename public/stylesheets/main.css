@@ -1,5 +1,27 @@
+
 #logoImg {
     width: 115px;
     height: 73px;
     border-radius: 7%
+}
+
+#menu_wrapper {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+#nav_wrapper {
+    margin-left: 35px;
+}
+
+.jumbotron {
+    font-family: 'Bree Serif', serif;
+    color: rgb(255, 255, 255);
+    background-image: url("/images/main_image.jpg");
+    background-size: auto 100%;
+    min-height: 500px;
+  }
+
+  .lead{
+    font-weight: 100;
 }
