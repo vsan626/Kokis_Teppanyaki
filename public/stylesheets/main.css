@@ -84,6 +84,27 @@
         font-size: 15px;
     }
   }
-.lead{
-    font-weight: 100;
+
+/* Kokis-story page */
+.storyContainer {
+    width: 900px;
+    height: 750px;
+}
+
+.storyImage img {
+    width: 533px;
+    height: 400px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.storyText {
+    float: right;
+}
+
+
+/* Footer */
+
+.socialIcons {
+    letter-spacing: 8px;
 }
