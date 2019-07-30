@@ -1,4 +1,13 @@
 
+html {
+    background: url("/images/Japanes_Background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 #logoImg {
     width: 115px;
     height: 73px;
@@ -86,16 +95,29 @@
   }
 
 /* Kokis-story page */
-.storyContainer {
-    width: 900px;
-    height: 750px;
+
+.container .storyHeader{
+    padding-left: 25px;
+}
+
+.storyHeader{
+    padding-left: 25px;
+    font-family: 'Bree Serif', serif;
+}
+
+.storyHr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .storyImage img {
     width: 533px;
     height: 400px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
 
 .storyText {
@@ -108,3 +130,10 @@
 .socialIcons {
     letter-spacing: 8px;
 }
+
+.footerContainer {
+    width: 100%;
+    color: white;
+    background-color: #2c2c2c;
+}
+
