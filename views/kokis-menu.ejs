@@ -1,0 +1,40 @@
+<% include partials/header.ejs %>
+
+<h1 class="title">Menu</h1>
+
+<div class="tabContainer">
+    <div class="buttonContainer container">
+        <button onclick="showPanel(0, '#44336')">Appetizers</button>
+        <button onclick="showPanel(1, '#4caf50')">Lunch</button>
+        <button onclick="showPanel(2, '#2196f3')">Dinner</button>
+        <button onclick="showPanel(3, '#ff5722')">Kids</button>
+        <button onclick="showPanel(4, '#44336')">Drinks</button>
+    </div>
+        <div class="tabPanel">
+            <h3>Appetizers</h3>
+            <p class="dish">Vegetable Tempura <span class="pricing">$8.95</span></p>
+            <p class="dish">Calamari & Vegetable Tempura <span class="pricing">$8.95</span></p>
+            <p class="dish">Shrimp & Vegetable Tempura <span class="pricing">$8.95</span></p>
+            <p class="dish">Chef’s Delight Eggroll (4) <span class="pricing">$8.95</span></p>
+            <p class="dish">Gyoza (fried dumplings) (7) <span class="pricing">$7.95</span></p>
+            <p class="dish">Deep Fried Oysters (6) <span class="pricing">$10.95</span></p>
+            <p class="dish">Soft Shell Crab <span class="pricing">$10.95</span></p>
+            <p class="dish">Yaki Tofu <span class="pricing">$7.95</span></p>
+            <p class="dish">Edamame (soy beans) <span class="pricing">$3.95</span></p>
+            <p class="dish">Karaage Chicken (Japanese Fried Chicken) <span class="pricing">$8.95</span></p>
+        </div>
+
+        <div class="tabPanel">Lunch: content</div>
+        <div class="tabPanel">Dinner: content</div>
+        <div class="tabPanel">Kids: content</div>
+        <div class="tabPanel">Drinks: content</div>
+    <div class="push"></div>
+</div>
+
+
+
+
+
+
+
+<% include partials/footer.ejs %>

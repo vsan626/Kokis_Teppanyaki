@@ -12,13 +12,25 @@ app.get("/kokisgrille", function(req, res){
 })
 
 //=================
+//Menu
+//=================
+app.get("/kokisgrille/menu", function(req, res){
+    res.render("kokis-menu")
+})
+
+//=================
 //Our Story
 //=================
 app.get("/kokisgrille/story", function(req, res){
     res.render("kokis-story");
 })
 
-
+//=================
+//Contact us
+//=================
+app.get("/kokisgrille/contact", function(req, res){
+    res.render("kokis-contact");
+})
 
 app.listen(3000, function(){
     console.log("~Koki's webpage Started~")
