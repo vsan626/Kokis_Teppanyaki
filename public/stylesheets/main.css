@@ -210,11 +210,33 @@ html, body {
     width: 40%;
 }
 
-.wine-container {
+.bevType-container {
     border: solid 1px #000000;
     display: flex;
     text-align: left;
     padding-left: 2em;
+}
+
+.beer-container {
+    font-size: 1em;
+    font-weight: 700;
+    font-family: "brandon-grotesque";
+    letter-spacing: .5px;
+    display: flex;
+    justify-content: flex-end;
+    border: solid 1px #000000;
+    align-items: baseline;
+    word-wrap: none;
+}
+
+
+.beer-small {
+    border: solid 1px #000000;
+    width: 50%;
+}
+.beer-large {
+    border: solid 1px #000000;
+    width: 50%;
 }
 
 
