@@ -16,3 +16,4 @@ function showPanel(panelIndex, colorCode){
 }
 
 showPanel(0, "#44336")
+//showPanel(0, "#44336")

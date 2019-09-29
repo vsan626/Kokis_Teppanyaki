@@ -1,18 +1,22 @@
 <% include partials/header.ejs %>
 
+<div class="container">
 <h1 class="title">Menu</h1>
 
 <div class="tabContainer">
     <div class="buttonContainer container">
-        <button onclick="showPanel(0, '#44336')">Appetizers</button>
-        <button onclick="showPanel(1, '#4caf50')">Lunch</button>
-        <button onclick="showPanel(2, '#2196f3')">Dinner</button>
-        <button onclick="showPanel(3, '#ff5722')">Kids</button>
-        <button onclick="showPanel(4, '#44336')">Drinks</button>
+    <!-- <button onclick="showPanel(0, 'color')">Appetizers</button> -->
+        <button onclick="showPanel(0)">Appetizers</button>
+        <button onclick="showPanel(1)">Lunch</button>
+        <button onclick="showPanel(2)">Dinner</button>
+        <button onclick="showPanel(3)">Kids</button>
+        <button onclick="showPanel(4 )">Drinks</button>
     </div>
     <!-- APPETIZERS -->
         <div class="tabPanel">
+
                 <h2>Appetizers</h2>
+
             <div class="menu-container">
                     <div class="menu-items appetizer">
                         <p>Vegetable Tempura</p>
@@ -45,10 +49,13 @@
     <!-- LUNCH -->
         <div class="tabPanel">
             <h2>Lunch Menu</h2>
-            <h4>LUNCH SPECIALS</h4>
-            <h5>Served with Soup, Salad, Hibachi Vegetables & Steamed Rice</h5>
-            <h5>(may substitute fried rice for $2.50 extra)</h5>
-            <h5>Fried Rice cooked with finely chopped chicken & vegetables</h5>
+            <h4>Lunch Specials</h4>
+        <div class="menu-details">
+            <p>Served with Soup, Salad, Hibachi Vegetables & Steamed Rice</p>
+            <p>(may substitute fried rice for $2.50 extra)</h5>
+            <p>Fried Rice cooked with finely chopped chicken & vegetables</p>
+        </div>
+
             <div class="menu-container">
                 <div class="menu-items">
                     <p>Sesame Chicken or Teriyaki Chicken (white meat)</p>
@@ -72,8 +79,9 @@
                     <p>$20.95</p>
                 </div>
             </div>
-
-            <h4>VEGETABLE DELIGHT</h4>
+        <div class="menu-titles">
+                <h4>VEGETABLE DELIGHT</h4>
+        </div>
             <div class="menu-container">
                 <div class="menu-items">
                     <p>Vegetable Delight </p>
@@ -83,11 +91,16 @@
                     <p>$14.95</p>
                 </div>
             </div>
-            <h5>Hibachi vegetables, Asparagus & Oriental noodles (contains egg) served with salad</h5>
-
+            <div class="menu-details">
+                <p>Hibachi vegetables, Asparagus & Oriental noodles (contains egg) served with salad</p>
+            </div>
+        <div class="menu-titles">
             <h4>YAKISOBA</h4>
-            <h5>Oriental Noodles (contains egg) with choice of meat. Served with Soup & Salad</h5>
-            <h5>(may add Hibachi Vegetables for $6.00 extra)</h5>
+        </div>
+            <div class="menu-details">
+                <p>Oriental Noodles (contains egg) with choice of meat. Served with Soup & Salad</p>
+                <p>(may add Hibachi Vegetables for $6.00 extra)</p>    
+            </div>
             <div class="menu-container">
                 <div class="menu-items">
                     <p>Chicken (white meat)</p>
@@ -101,11 +114,14 @@
                     <p>$16.95</p>
                 </div>
             </div>
-
+        <div class="menu-titles">
             <h4>MIX & MATCH COMBINATIONS</h4>
-            <h5>Served with Soup, Salad, Hibachi Vegetables & Steamed Rice</h5>
-            <h5>(may substitute fried rice for $2.50 extra)</h5>
-            <h5>Fried Rice cooked with finely chopped chicken & vegetables</h5>
+        </div>
+            <div class="menu-details">
+                <p>Served with Soup, Salad, Hibachi Vegetables & Steamed Rice</p>
+                <p>(may substitute fried rice for $2.50 extra)</p>
+                <p>Fried Rice cooked with finely chopped chicken & vegetables</p>        
+            </div>
             <div class="menu-container">
                 <div class="menu-items">
                     <p>Select (2) items</p>
@@ -116,7 +132,7 @@
                 </div>
             </div>
             <div class="menu-container">
-                <div class="menu-items">
+                <div class="menu-mixMatch">
                     <p>Mini Steak</p>
                     <p>Pineapple Calamari</p>
                     <p>Sesame or Teriyaki Chicken</p>
@@ -124,7 +140,7 @@
                     <p>Hibachi Shrimp</p>
                 </div>
 
-                <div class="menu-items">
+                <div class="menu-mixMatch">
                     <p>New York Steak (add $3.00)</p>
                     <p>Hibachi Scallops (add $3.00)</p>
                     <p>Filet Mignon (add $6.00)</p>
@@ -132,8 +148,9 @@
                     <p>Lobster Tail (add $10.00)</p>
                 </div>
             </div>
-
+        <div class="menu-titles">
             <h4>ADDITIONAL SELECTIONS TO MAIN MEAL</h4>
+        </div>
             <div class="menu-container">
                 <div class="menu-items">
                     <p>Yakisoba</p>
@@ -183,25 +200,28 @@
     <!-- DINNER -->
         <div class="tabPanel">
             <h2>Dinner Menu</h2>
+        <div class="menu-titles">
             <h4>TRADITIONAL DINNERS</h4>
-            <h5>Served with Beef Onion Soup, Salad, Shrimp Appetizer, Hibachi Vegetables, and Steamed Rice (may substitute fried rice for $2.50 extra)</h5>
-            <h5>(may substitute fried rice for $2.50 extra)</h5>
-            <h5>Fried Rice cooked with finely chopped chicken & vegetables</h5>    
-            <h5>Sharing & Splitting charge $7.00 per person (Include Soup, Salad & Steamed Rice)</h5>    
-            
-            <h3>Chef Special</h3>
+        </div>
+        <div class="menu-details">
+            <p>Served with Beef Onion Soup, Salad, Shrimp Appetizer, Hibachi Vegetables, and Steamed Rice</p>
+            <p>(may substitute fried rice for $2.50 extra)</p>
+            <p>Fried Rice cooked with finely chopped chicken & vegetables</p>    
+            <p>Sharing & Splitting charge $7.00 per person (Include Soup, Salad & Steamed Rice)</p>    
+        </div>
+
             <div class="menu-container">
                 <div class="menu-items">
-                    <p>Chateau Briand</p>
+                    <p>Chateau Briand<span class="chef-special">(Chef Special)</span></p>
                 </div>
         
                 <div class="menu-pricing">
                     <p>$32.95</p>
                 </div>
             </div>
-                <h4>
-                    9oz. Filet Mignon center cut reduced in red wine, & served with sautéed mushrooms and asparagus
-                </h4>
+            <div class="menu-details">
+                <p>9oz. Filet Mignon center cut reduced in red wine, & served with sautéed mushrooms and asparagus</p>
+            </div>
         
             <div class="menu-container">
                     <div class="menu-items">
@@ -226,9 +246,13 @@
                         <p>$36.95</p>
                     </div>
             </div>
+        <div class="menu-titles">
             <h4>KOKI’S LAND AND SEA</h4>
-            <h5>(special for 2 people only)</h5>
-            <h5>*No Substitutions*</h5>
+        </div>
+        <div class="menu-details">
+            <p>(special for 2 people only)</p>
+            <p>*No Substitutions*</p>
+        </div>
             <div class="menu-container">
                 <div class="menu-items">
                     <p>(Sp.1) New York Steak, Chicken, Scallops & Shrimp </p>
@@ -240,10 +264,14 @@
                     <p>$69.95</p>
                 </div>
             </div>
-
+        
+        <div class="menu-titles">
             <h4>MIX & MATCH COMBINATIONS</h4>
-            <h5>Select (2) items $26.95 (cannot choose 2 steaks or same item twice)</h5>
-            <h5>Sharing & Splitting charge $7.00 per person (Include Soup, Salad & Steamed Rice)</h5>
+        </div>
+        <div class="menu-details">
+            <p>Select (2) items $26.95 (cannot choose 2 steaks or same item twice)</p>
+            <p>Sharing & Splitting charge $7.00 per person (Include Soup, Salad & Steamed Rice)</p>    
+        </div>
             <div class="menu-container">
                 <div class="dinner-container">
                     <p>Sesame or Teriyaki Chicken</p>
@@ -260,12 +288,17 @@
                     <p>Pineapple Calamari</p>
                 </div>
             </div>
-            
+
+        <div class="menu-titles">
             <h4>YAKISOBA</h4>
-            <h5>Oriental Noodles* with choice of meat served with Soup & Salad</h5>
-            <h5>(may add Hibachi Vegetables for $6.00 extra)</h5>
-            <h5>*contains egg*</h5>
-            <h5>Sharing & Splitting charge $7.00 per person (Include Soup, Salad & Steamed Rice)</h5>
+        </div>
+
+        <div class="menu-details">
+            <p>Oriental Noodles* with choice of meat served with Soup & Salad</h5>
+            <p>(may add Hibachi Vegetables for $6.00 extra)</p>
+            <p>*contains egg*</p>
+            <p>Sharing & Splitting charge $7.00 per person (Include Soup, Salad & Steamed Rice)</p>
+        </div>
                 <div class="menu-container">
                     <div class="menu-items">
                         <p>Chicken (white meat)</p>
@@ -280,8 +313,14 @@
                     </div>
                 </div>
 
+        <div class="menu-titles">
             <h4>VEGETABLE DELIGHT</h4>
-            <h5>Sharing & Splitting charge $7.00 per person (Include Soup, Salad & Steamed Rice)</h5>
+        </div>
+
+        <div class="menu-details">
+            <p>Sharing & Splitting charge $7.00 per person (Include Soup, Salad & Steamed Rice)</p>
+        </div>
+
                 <div class="menu-container">
                     <div class="menu-items">
                         <p>Vegetable Delight</p>
@@ -291,9 +330,13 @@
                         <p>$21.95</p>
                     </div>
                 </div>
-            <h5>Hibachi vegetables, Asparagus, Tofu & Oreiental noodles (contains egg) served with salad</h5>
+        <div class="menu-details">
+            <p>Hibachi vegetables, Asparagus, Tofu & Oreiental noodles (contains egg) served with salad</p>
+        </div>
 
-            <h4>ADDITIONAL SELECTIONS TO MAIN MEAL:</h4>
+        <div class="menu-titles">
+            <h4>ADDITIONAL SELECTIONS TO MAIN MEAL</h4>
+        </div>
                 <div class="menu-container">
                     <div class="menu-items">
                         <p>Yakisoba</p>
@@ -325,8 +368,10 @@
                         <p>$2 per person</p>
                     </div>
                 </div>
-
+        
+        <div class="menu-titles">
             <h4>Dessert</h4>
+        </div>
                 <div class="menu-container">
                     <div class="menu-items">
                         <p>Ice Cream (Green Tea, Chocolate, Vanilla) </p>
@@ -343,13 +388,15 @@
     <!-- KIDS -->
         <div class="tabPanel">
             <h2>Kids Menu</h2>
-            <h5>(children under 10)</h5>
-            <h5>Served with Beef Onion Soup, Hibachi Vegetables, Steamed Rice & Ice Cream</h5>
-            <h5>(may substitute fried rice for $2.50 extra)</h5>
-
-            <br>
-
+        <div class="menu-details">
+            <p>(children under 10)</p>
+            <p>Served with Beef Onion Soup, Hibachi Vegetables, Steamed Rice & Ice Cream</p>
+            <p>(may substitute fried rice for $2.50 extra)</p>    
+        </div>
+        
+        <div class="menu-titles">
             <h4>Lunch Specials</h4>
+        </div>
             <div class="menu-container">
                     <div class="menu-items">
                         <p>Ninja Chicken</p>
@@ -363,10 +410,10 @@
                         <p>$12.95</p>
                     </div>
                 </div>
-
-            <br>
-
+        
+        <div class="menu-titles">
             <h4>Dinner Specials</h4>
+        </div>
             <div class="menu-container">
                     <div class="menu-items">
                         <p>Ninja Chicken</p>
@@ -536,9 +583,13 @@
             </div>
 
         <br>
-
+        
+        <div class="menu-titles">
             <h4>Wines</h4>
-            <h5>(corkage fee $15.00)</h5>
+        </div>
+        <div class="menu-details">
+            <p>(corkage fee $15.00)</p>
+        </div>
             
             <div class="bevType-container">
                 <h4 class="wines">Red Wines:</h4>
@@ -735,8 +786,10 @@
                     </p>
                 </div>
             </div>
-
+        
+        <div class="menu-titles">
             <h4>Sake</h4>
+        </div>
 
             <div class="bevType-container">
                 <h4 class="wines">Cold:</h4>
@@ -869,8 +922,10 @@
                     </p>
                 </div>
             </div>
-
+        
+        <div class="menu-titles">
             <h4>Beers</h4>
+        </div>
 
             <div class="beer-container">
                 <div class="beer-small">
@@ -883,36 +938,83 @@
                     <p>(Large)</p>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
+            <div class="menu-container">
+                <div class="drink-items">
+                    <p>Bud Light</p>
+                    <p>Asahi Beer (Super Dry)</p>
+                    <p>Coors Light</p>
+                    <p>Sapporo</p>
+                    <p>Corona (Extra)</p>
+                    <p>Kirin Ichiban</p>
+                    <p>Kirin Light</p>
+                </div>
+            </div>
         
-    <div class="push"></div>
+        <div class="menu-titles">
+            <h4>Beverages</h4>
+        </div>
+            <div class="menu-container">
+                <div class="drink-items">
+                    <p>Soda (free refill)</p>
+
+                    <i>– Coke, Diet Coke, Sprite, Root Beer, Orange Soda, Lemonade</i>
+                </div> 
+                <div class="drink-pricing">
+                    <p>$2.95</p>
+                </div>
+            </div>
+            <div class="menu-container">
+                <div class="drink-items">
+                    <p>Juice (no refill)</p>
+
+                    <i>– Apple Juice, Cranberry Juice, Orange Juice</i>
+                </div> 
+                <div class="drink-pricing">
+                    <p>$2.95</p>
+                </div>
+            </div>
+            <div class="menu-container">
+                <div class="drink-items">
+                    <p>Hot Green Tea (YAMAnotoYAMA)</p>
+                </div> 
+                <div class="drink-pricing">
+                    <p>$2.50</p>
+                </div>
+            </div>
+            <div class="menu-container">
+                <div class="drink-items">
+                    <p>Ice Tea  or Ice Green Tea(free refill)</p>
+                </div> 
+                <div class="drink-pricing">
+                    <p>$2.50</p>
+                </div>
+            </div>
+            <div class="menu-container">
+                <div class="drink-items">
+                    <p>Perrier Bottled Water</p>
+                </div> 
+                <div class="drink-pricing">
+                    <p>$2.95</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-details">
+            <p>Prices subject to change without notice.</p> 
+            <p>18% gratuity added for parties of 7 or more.</p> 
+            <p>Reservations recommended.</p>     
+        </div>
+
+
+</div>
+
+<div class="imgContainer">
+    <img src="/images/menu1.jpg"> 
+    <img src="/images/menu2.jpg">
+    <img src="/images/menu3.jpg">
+    <img src="/images/beverage.jpg">
+    <img src="/images/menu5.jpg">
+</div>
+
 </div>
 
 
