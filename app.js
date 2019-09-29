@@ -11,7 +11,7 @@ app.use( express.static( "public" ) );
 //=================
 //landing page
 //=================
-app.get("/kokisgrille", function(req, res){
+app.get("/", function(req, res){
     res.render("index");
 })
 
